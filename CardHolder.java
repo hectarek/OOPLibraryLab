@@ -2,6 +2,9 @@ import java.time.LocalDate;
 
 public class CardHolder {
     
+    private OverdueList<Book> overdueBooks;
+    private OverdueList<Periodical> overduePeriodicals;
+
     private String firstname, lastname, age, address;
     private int libraryNum;
     private boolean canCheckout;
