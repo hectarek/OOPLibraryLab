@@ -1,16 +1,18 @@
 
 public class LibraryItem {
 
-    private String title, genre, publisher;
+    private String title, genre;
     private int year;
     private Author author;
+    private PublishingCompany publisher;
 
-    LibraryItem(String title, Author author, int year, String genre, String publisher){
+
+    LibraryItem(String title, Author author, int year, String genre, PublishingCompany publisher){
         this.title = title;
         this.author = new Author();
         this.year = year;
         this.genre = genre;
-        this.publisher = publisher;
+        this.publisher = new PublishingCompany();
     }
 
     // Getters and Setters
@@ -36,10 +38,10 @@ public class LibraryItem {
         this.genre = genre;
     }
 
-    public String getPublisher() {
+    public PublishingCompany getPublisher() {
         return publisher;
     }
-    public void setPublisher(String publisher) {
+    public void setPublisher(PublishingCompany publisher) {
         this.publisher = publisher;
     }
 

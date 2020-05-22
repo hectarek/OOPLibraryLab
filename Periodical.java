@@ -6,7 +6,7 @@ public class Periodical extends LibraryItem implements Reservable {
     private int issueNum;
     private IssueFrequencies issueFrequency;
 
-    public Periodical(String title, String author, int year, String genre, String publisher, LocalDate datePublished, int issueNum, IssueFrequencies issueFrequency) {
+    public Periodical(String title, Author author, int year, String genre, PublishingCompany publisher, LocalDate datePublished, int issueNum, IssueFrequencies issueFrequency) {
         super(title, author, year, genre, publisher);
     }
 

@@ -4,7 +4,7 @@ public class Newspaper extends Periodical {
     
     private String headline;
 
-    public Newspaper(String title, String author, int year, String genre, String publisher, LocalDate datePublished, int issueNum, IssueFrequencies issueFrequency, String headline) {
+    public Newspaper(String title, Author author, int year, String genre, PublishingCompany publisher, LocalDate datePublished, int issueNum, IssueFrequencies issueFrequency, String headline) {
         super(title, author, year, genre, publisher, datePublished, issueNum, issueFrequency);
     }
 

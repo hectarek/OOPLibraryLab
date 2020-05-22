@@ -5,8 +5,10 @@ public class Book extends LibraryItem implements Reservable, Loanable {
     private int pages;
     private LocalDate releaseDate;
 
-    public Book(String title, Author author, int year, String genre, String publisher, int pages) {
+    public Book(String title, Author author, int year, String genre, PublishingCompany publisher, int pages, LocalDate releaseDate) {
         super(title, author, year, genre, publisher);
+        this.pages = pages;
+        this.releaseDate = releaseDate;
     }
 
     public int getPages() {

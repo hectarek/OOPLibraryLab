@@ -2,7 +2,7 @@ public class ReferenceBook extends Book {
     
     private String topic;
 
-    public ReferenceBook(String title, String author, int year, String genre, String publisher, int pages, String topic) {
+    public ReferenceBook(String title, Author author, int year, String genre, PublishingCompany publisher, int pages, String topic) {
         super(title, author, year, genre, publisher, pages);
     }
 

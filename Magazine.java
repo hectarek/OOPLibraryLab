@@ -5,7 +5,7 @@ public class Magazine extends Periodical {
     private String company;
     private int pages;
     
-    public Magazine(String title, String author, int year, String genre, String publisher, LocalDate datePublished, int issueNum, IssueFrequencies issueFrequency, String company, int pages) {
+    public Magazine(String title, Author author, int year, String genre, PublishingCompany publisher, LocalDate datePublished, int issueNum, IssueFrequencies issueFrequency, String company, int pages) {
         super(title, author, year, genre, publisher, datePublished, issueNum, issueFrequency);
     }
 
