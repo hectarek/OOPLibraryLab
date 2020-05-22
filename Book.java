@@ -5,7 +5,7 @@ public class Book extends LibraryItem implements Reservable, Loanable {
     private int pages;
     private LocalDate releaseDate;
 
-    public Book(String title, String author, int year, String genre, String publisher, int pages) {
+    public Book(String title, Author author, int year, String genre, String publisher, int pages) {
         super(title, author, year, genre, publisher);
     }
 
@@ -24,7 +24,7 @@ public class Book extends LibraryItem implements Reservable, Loanable {
     }
 
     // Implementing interfaces from Reservable and Loanable 
-    
+    //Reservable
     @Override
     public boolean isReservable() {
         return true;
@@ -40,10 +40,20 @@ public class Book extends LibraryItem implements Reservable, Loanable {
         return 14; 
     };
 
+    // Loanable
     @Override
     public boolean isLoanable() {
         return true;
     }
     
+    @Override
+    public double lateFee() {
+        return 2.99;
+    }
+
+    @Override
+    public FeeFrequency lateFeeFrequency() {
+        return FeeFrequency.WEEKLY;
+    }
     
 }

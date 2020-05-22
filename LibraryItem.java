@@ -1,11 +1,13 @@
+
 public class LibraryItem {
 
-    private String title, author, genre, publisher;
+    private String title, genre, publisher;
     private int year;
+    private Author author;
 
-    LibraryItem(String title, String author, int year, String genre, String publisher){
+    LibraryItem(String title, Author author, int year, String genre, String publisher){
         this.title = title;
-        this.author = author;
+        this.author = new Author();
         this.year = year;
         this.genre = genre;
         this.publisher = publisher;
@@ -20,10 +22,10 @@ public class LibraryItem {
         this.title = title;
     }
 
-    public String getAuthor() {
+    public Author getAuthor() {
         return author;
     }
-    public void setAuthor(String author) {
+    public void setAuthor(Author author) {
         this.author = author;
     }
 
