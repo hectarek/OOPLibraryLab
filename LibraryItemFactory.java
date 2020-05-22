@@ -15,10 +15,10 @@ public class LibraryItemFactory {
 
         switch(item) {
             case BOOK:
-                thing = new Book("Title", name , 2000, "NoGenre", company, 0, LocalDate.now())
+                thing = new Book("Title", name , 2000, "NoGenre", company, 0, LocalDate.now());
                 break;
             case PERIODICAL:
-                thing = new Periodical();
+                thing = new Periodical("Title", name, 2000, "NoGenre", company, LocalDate.now(), 3, IssueFrequencies.QUARTERLY);
                 break;
             default:
                 break;
