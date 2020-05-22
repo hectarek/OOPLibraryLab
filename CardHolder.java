@@ -66,9 +66,5 @@ public class CardHolder {
     public void setMemberSince(LocalDate memberSince) {
         this.memberSince = memberSince;
     }
-
-    
-    
-
     
 }

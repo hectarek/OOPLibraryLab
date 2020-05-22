@@ -1,6 +1,6 @@
 import java.time.LocalDate;
 
-public class Periodical extends LibraryItem{
+public class Periodical extends LibraryItem implements Reservable {
     
     private LocalDate datePublished;
     private int issueNum;
@@ -29,6 +29,21 @@ public class Periodical extends LibraryItem{
     }
     public void setIssueFrequency(IssueFrequencies issueFrequency) {
         this.issueFrequency = issueFrequency;
+    }
+
+    @Override 
+    public boolean isReservable() {
+        return true;
+    }
+
+    @Override 
+    public LocalDate reservedDate() {
+        return LocalDate.now();
+    }
+
+    @Override
+    public int reservationLengthInDays() {
+        return 1;
     }
 
 }
